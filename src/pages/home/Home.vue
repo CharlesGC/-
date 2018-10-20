@@ -1,5 +1,7 @@
 <template>
-    <div>home</div>
+  <div>
+    hello world
+  </div>
 </template>
 
 <script>
@@ -9,5 +11,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
