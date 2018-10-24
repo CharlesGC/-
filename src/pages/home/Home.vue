@@ -10,20 +10,15 @@
 
 <script>
 import { mapState } from 'vuex'
-import HomeHeader from './components/Header'
-import HomeSwiper from './components/Swiper'
-import HomeIcons from './components/Icons'
-import HomeRecommend from './components/Recommend'
-import HomeWeekend from './components/Weekend'
 import axios from 'axios'
 export default {
   name: 'Home',
   components: {
-    HomeWeekend,
-    HomeHeader,
-    HomeSwiper,
-    HomeIcons,
-    HomeRecommend
+    HomeWeekend: () => import('./components/Weekend'),
+    HomeHeader: () => import('./components/Header'),
+    HomeSwiper: () => import('./components/Swiper'),
+    HomeIcons: () => import('./components/Icons'),
+    HomeRecommend: () => import('./components/Recommend')
   },
   data () {
     return {

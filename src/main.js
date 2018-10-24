@@ -9,6 +9,7 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 import FastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
 
 import 'swiper/dist/css/swiper.css'
 
