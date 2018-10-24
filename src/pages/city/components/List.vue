@@ -16,7 +16,7 @@
           热门城市
         </div>
         <div class="button-list">
-          <div class="button-wrapper" v-for="(item, index) of hotCities" :key="index" @click="cityClick(item.name)">
+          <div class="button-wrapper" v-for="(item, index) in hotCities" :key="index" @click="cityClick(item.name)">
             <div class="button">{{item.name}}</div>
           </div>
         </div>

@@ -51,6 +51,7 @@ export default {
   methods: {
     cityClick (city) {
       this.$store.dispatch('changeCity', city)
+      this.$router.push('/')
     }
   },
   mounted () {
