@@ -10,12 +10,15 @@
           {{this.gallaryImgs.length}}
         </div>
       </div>
-      <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="gallaryClose"></common-gallary>
+      <fade>
+        <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="gallaryClose"></common-gallary>
+      </fade>
     </div>
 </template>
 
 <script>
 import CommonGallary from '@/common/gallary/Gallary'
+import Fade from '@/common/fade/Fade'
 export default {
   name: 'Banner',
   props: {
@@ -29,7 +32,8 @@ export default {
     }
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    Fade
   },
   methods: {
     bannerClick () {
